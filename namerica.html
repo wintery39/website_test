@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>map_northamerica</title>
+    <meta charset="utf-8">
+    <script>
+        function popup(url){
+            var name = "popup test";
+            var option = "width = 1000, height = 1000, top = 100, left = 350, menubar = no, location = no, toolbar=no, resizable=no, status=no, scrollbars=no"
+            window.open(url, name, option);
+        }
+    </script>
+    <style>
+        .fullscreen {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-image: url(namericamap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .mexico {
+            position: absolute;
+            top: 81%;
+            right: 48%
+        }
+
+        .newyork {
+            position: absolute;
+            top: 62%;
+            right: 42%;
+        }
+
+        img {
+            width: 3%;
+            height: 3%;
+        }
+
+            img:hover {
+                width: 5%;
+                height: 5%;
+            }
+    </style>
+</head>
+  <body>
+      <div class="fullscreen">
+          <a href="javascript:popup('namerica_mexico.html')" target="_self"><img src="point.png" class="mexico"></a>
+          <a href="javascript:popup('namerica_newyork.html')" target="_self"><img src="point.png" class="newyork"></a>
+      </div>
+  </body>
+</html>
