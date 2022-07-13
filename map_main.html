@@ -3,73 +3,65 @@
   <head>
     <title>map_main</title>
     <meta charset="utf-8">
-    <script>
-      window.focus();
-      window.moveTo(0,0);
-      window.resizeTo(1200,800);
-    </script>
     <style>
-      .fullscreen {width: 100%; height: 100%;
-        position: fixed;
+      .fullscreen {
+        position: relative;
         background-image: url(worldmap.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
+        padding-top: 56.25%;
       }
       .asia {
-        position: absolute;
         top: 40%;
-        left: 37%;
+        left: 36%;
         width: 150px;
         height: 50px;
       }
       .europe {
-          position: absolute;
           top: 39%;
-          left: 26%;
+          left: 23%;
           width: 100px;
           height: 50px;
       }
       .namerica {
-          position: absolute;
           top: 42%;
-          right: 26%;
+          left: 70%;
           width: 200px;
           height: 100px;
       }
       .samerica {
-          position: absolute;
           top: 73%;
-          right: 18%;
+          left: 81%;
           width: 200px;
           height: 100px;
       }
       .australia {
-          position: absolute;
           top: 80%;
-          right: 49%;
+          left: 45%;
           width: 200px;
           height: 100px;
       }
       .africa {
-          position: relative;
-          top: 60%;
-          left: 20%;
+          top: 62%;
+          left: 18%;
           width: 200px;
           height: 100px;
       }
       a {
+        position: absolute;
         text-align :  center;
         color: black;
         font-size: 20px;
         text-decoration: none;
+        transform: translate(-50%, 0%);
       }
       a:hover{
         font-size: 35px;
       }
     </style>
   </head>
-  <body>
+  <body onresize="parent.resizeTo(500,400)" onload="parent.resizeTo(500,400)">
     <div class="fullscreen">
       <a href="asia.html" class="asia"> 아시아</a>
       <a href="europe.html" class="europe"> 유럽</a>
